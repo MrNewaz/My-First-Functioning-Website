@@ -1,0 +1,327 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+.main-head li {
+  font-weight: bold;
+}
+
+li,
+button,
+label,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: #4e6c97;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+}
+button:hover {
+  background: #2f425c;
+}
+
+/* Nav Section With Hero */
+
+.main-head {
+  background: #131c27;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: +1;
+}
+
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 1 40rem;
+  list-style: none;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("/img/landing-page.jpg");
+
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+/* Locationss Section */
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("/img/new-york-page.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+
+.locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+.locations-head h3 {
+  padding: 4rem 0;
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+.moving-cloud-1 {
+  animation: cloudAnimantion 5.4s infinite alternate ease-in-out;
+}
+.moving-cloud-2 {
+  top: 20%;
+  z-index: -1;
+  opacity: 0.5;
+  animation: cloudAnimantion 5.5s infinite alternate ease-in-out;
+}
+
+@keyframes cloudAnimantion {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* Benefits Section */
+
+.benefits-head {
+  background: #202b3a;
+  min-height: 30vh;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.benefits-head h3 {
+  padding: 1rem;
+}
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  text-align: center;
+  flex: 1 1 25rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  max-width: 15%;
+  margin: 2rem;
+}
+
+.card h4,
+.card p {
+  padding: 2rem;
+  padding-top: 4rem;
+  line-height: 1.8rem;
+}
+.card-icon {
+  background: #202b3a;
+}
+
+/* Contact Section */
+
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("/img/contact-mountain.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  width: 60%;
+  color: white;
+  border-radius: 20px;
+}
+
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+
+.name-form,
+.email-form {
+  padding: 3rem;
+  text-align: center;
+}
+
+.form-wrapper label {
+  margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.form-wrapper input {
+  padding: 1rem 3rem;
+}
+
+/* footer section */
+
+footer {
+  color: white;
+  background: #202b3a;
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 10vh;
+}
+footer h5 {
+  flex: 1 1 40rem;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Media Query */
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+
+  .cloud {
+    height: 40%;
+    pointer-events: none;
+  }
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+  .moving-cloud-2 {
+    z-index: -2;
+  }
+  .locations-head h3 {
+    background: #111c29b9;
+    -webkit-text-fill-color: white;
+    text-align: center;
+    border-radius: 1rem;
+  }
+
+  .form-wrapper {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+  }
+
+  footer h5 {
+    padding-bottom: 3rem;
+  }
+}
