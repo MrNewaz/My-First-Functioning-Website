@@ -1,1 +1,1 @@
-# A fully funcktioning travel website I made while practicticing HTML & CSS
+# A fully functioning travel website I made while practicticing HTML & CSS
