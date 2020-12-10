@@ -94,7 +94,7 @@ nav ul {
 
 .hero {
   min-height: 90vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
     url("/img/landing-page.jpg");
 
   color: white;
@@ -283,6 +283,9 @@ footer ul {
   flex: 1 1 40rem;
   justify-content: space-between;
   align-items: center;
+}
+button :focus {
+  background: #2d3e57;
 }
 
 /* Media Query */
